@@ -1,0 +1,62 @@
+.badge.red { background-color: #ffcccb; color: #911; border: 1px solid #911; }
+.badge.orange { background-color: #ffe5b4; color: #850; border: 1px solid #850; }
+.badge.yellow { background-color: #ffffcc; color: #880; border: 1px solid #880; }
+.badge.green { background-color: #ccffcc; color: #060; border: 1px solid #060; }
+.badge.blue { background-color: #ccccff; color: #008; border: 1px solid #008; }
+.badge.bluesky { background-color: #e0f7fa; color: #006064; border: 1px solid #006064; }
+.badge.purple { background-color: #e1bee7; color: #4a148c; border: 1px solid #4a148c; }
+.badge.pink { background-color: #f8bbd0; color: #880e4f; border: 1px solid #880e4f; }
+.badge.gray { background-color: #f5f5f5; color: #424242; border: 1px solid #424242; }
+.badge.brown { background-color: #d7ccc8; color: #3e2723; border: 1px solid #3e2723; }
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-right: 5px;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.1); 
+}
+
+.task-card {
+  background: var(--paper-color);
+  border: var(--border-main);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-solid);
+  position: relative;
+}
+
+.task-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed var(--accent-gold);
+}
+
+.task-card p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priority-star {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: var(--accent-brown);
+  font-size: 1.5rem;
+}
+
+.toggle-button {
+  background: none;
+  border: 1px solid var(--accent-brown);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px;
+}

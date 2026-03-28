@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #f8e9cf;
+  --paper-color: #fffcf5;
+  --accent-brown: #5d4037;
+  --accent-gold: #bcaaa4;
+  --text-main: #2c1e1a;
+  --shadow-solid: 4px 4px 0px #5d4037;
+  --border-main: 2px solid #5d4037;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(var(--accent-gold) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Courier New', Courier, monospace; 
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid var(--accent-brown);
+  background-color: var(--paper-color);
+  color: var(--accent-brown);
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 3px 3px 0px var(--accent-brown); 
+  transition: all 0.1s ease;
+}
+button:active {
+  box-shadow: 0px 0px 0px var(--accent-brown);
+  transform: translate(2px, 2px);
+}
+
+qabutton.active-mode, 
+button.active {
+  background-color: var(--accent-brown);
+  color: white;
+}

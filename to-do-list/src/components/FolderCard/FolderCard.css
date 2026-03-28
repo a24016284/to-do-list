@@ -1,0 +1,68 @@
+
+.folder-card {
+  border: var(--border-main);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-solid);
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.folder-card.red { background-color: #ffebf0; }
+.folder-card.orange { background-color: #fff4e5; }
+.folder-card.yellow { background-color: #fffde7; }
+.folder-card.green { background-color: #f1f8e9; }
+.folder-card.blue { background-color: #e3f2fd; }
+.folder-card.bluesky { background-color: #e0f7fa; }
+.folder-card.purple { background-color: #f3e5f5; }
+.folder-card.pink { background-color: #fce4ec; }
+.folder-card.gray { background-color: #fafafa; }
+.folder-card.brown { background-color: #efebe9; }
+
+.folder-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--accent-brown);
+  border-bottom: 1px solid rgba(93, 64, 55, 0.2);
+}
+
+.folder-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.folder-card .delete-button {
+  background-color: #d9534f;
+  color: white;
+  border-radius: 3px; 
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+    padding: 1px 5px;          
+  font-size: 0.8rem;          
+  line-height: 2;             
+  
+  border: 1px solid var(--accent-brown); 
+  box-shadow: 1px 1px 0px var(--accent-brown); 
+  
+  align-self: center ;
+  
+  transition: all 0.1s ease;
+}
+
+.folder-card .delete-button:active {
+  box-shadow: 0px 0px 0px;
+  transform: translate(1px, 1px);
+}
+
+@media (max-width: 600px) {
+  .folder-card .delete-button {
+    width: auto;       
+    padding: 4px 8px;  
+    font-size: 0.7rem;
+  }
+}

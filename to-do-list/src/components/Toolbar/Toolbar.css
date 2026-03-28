@@ -1,0 +1,25 @@
+.toolbar {
+  background: rgba(255, 255, 255, 0.5);
+  border: var(--border-main);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.toolbar-block {
+  margin-bottom: 15px;
+}
+
+.badge-button {
+  border: 1px solid var(--accent-brown);
+  background: var(--paper-color);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.badge-button.active {
+  background: var(--accent-brown);
+  color: white;
+}
