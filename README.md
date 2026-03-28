@@ -1,71 +1,45 @@
-Voici une proposition de README.md complète, structurée et professionnelle, basée sur l'énoncé de ton projet et les fonctionnalités que nous avons implémentées.
+# Projet ToDo-List - React BUT2
 
-ToDo-List Project - React BUT2
-Projet de gestion de tâches et de dossiers réalisé dans le cadre du module Développement d'Applications au BUT2 Informatique. Cette application permet une gestion organisée des tâches avec des fonctionnalités avancées de filtrage, de tri et de visualisation de données.
+Projet de gestion de taches et de dossiers realise dans le cadre du module Developpement d'Applications au BUT2 Informatique. Cette application permet une gestion organisee des taches avec des fonctionnalites avancees de filtrage, de tri et de visualisation de donnees.
 
- Fonctionnalités
-Gestion des Tâches (Mode Tâches)
-Affichage Dynamique : Visualisation des tâches avec un "Mode Simple" (titre, échéance, 2 premiers dossiers) et un "Mode Complet" (description, équipiers, tous les dossiers) via un système d'accordéon.
+## Fonctionnalites
 
-Filtre par défaut : À l'arrivée, seules les tâches non terminées (hors états "Réussi" ou "Abandonné") sont affichées.
+### Gestion des Taches (Mode Taches)
+* **Affichage Dynamique** : Visualisation des taches avec un "Mode Simple" (titre, echeance, 2 premiers dossiers) et un "Mode Complet" (description, equipiers, tous les dossiers) via un systeme d'accordeon.
+* **Filtre par defaut** : A l'arrivee, seules les taches non terminees (hors etats "Reussi" ou "Abandonné") sont affichees.
+* **Tri Avance** : Tri des taches par date d'echeance (par defaut), date de creation ou nom.
+* **Filtrage Multicriteres** : Filtrage par dossiers, par etats ou par statut "En cours".
+* **Edition** : Modification du titre, de la description et de la date d'echeance directement depuis la carte de la tache.
 
-Tri Avancé : Tri des tâches par date d'échéance (par défaut), date de création ou nom.
+### Gestion des Dossiers (Mode Dossiers)
+* **CRUD Dossiers** : Passage en mode Dossiers pour visualiser, creer ou supprimer des dossiers thematiques.
+* **Personnalisation** : Chaque dossier possede un intitule, une description, une couleur parmi 10 choix et un pictogramme optionnel.
 
-Filtrage Multicritères : Filtrage par dossiers (0 à n), par états (0 à n) ou par statut "En cours".
+### Tableaux de Bord et Statistiques
+* **Compteurs en temps reel** : Affichage du nombre total de taches et du nombre de taches restant a accomplir dans le Header.
+* **Visualisation Graphique** : Un camembert (Pie Chart) dynamique affiche la repartition exacte des taches par etat avec une legende detaillee.
 
-Édition : Modification du titre, de la description et de la date d'échéance directement depuis la carte de la tâche.
+## Criteres d'Acceptation
 
-Gestion des Dossiers (Mode Dossiers)
-CRUD Dossiers : Passage en mode Dossiers pour visualiser, créer ou supprimer des dossiers thématiques.
+* **Taches** : Intitule (min. 5 caract.), date d'echeance obligatoire, etat obligatoire, liste d'equipiers geree par virgules.
+* **Dossiers** : Intitule (min. 3 caract.), couleur obligatoire.
+* **Securite** : Demande de confirmation systematique avant de reinitialiser l'application a zero.
+* **Donnees** : Chargement automatique d'un backup JSON au demarrage.
 
-Personnalisation : Chaque dossier possède un intitulé, une description, une couleur parmi 10 choix et un pictogramme optionnel.
+L'application sera disponible sur `http://localhost:3000`.
 
-Tableaux de Bord et Statistiques
-Compteurs en temps réel : Affichage du nombre total de tâches et du nombre de tâches restant à accomplir dans le Header.
+## Structure du Projet
 
-Visualisation Graphique : Un camembert (Pie Chart) dynamique affiche la répartition exacte des tâches par état avec une légende détaillée.
+L'architecture suit une approche modulaire:
+* **src/components/** : Composants UI decoupes par dossier avec leur propre fichier CSS.
+* **src/hooks/** : Logique metier centralisee dans le hook personnalise `useTodoApp.js`.
+* **src/utils/** : Fonctions pour le tri, le filtrage et la manipulation des donnees.
+* **src/constants/** : Enums pour les etats, les couleurs et les valeurs par defaut.
 
- Critères d'Acceptation (Validation)
-Tâches : Intitulé (min. 5 caract.), date d'échéance obligatoire, état obligatoire, liste d'équipiers gérée par virgules.
+## Bibliotheques utilisees
 
-Dossiers : Intitulé (min. 3 caract.), couleur obligatoire.
+* **React** : Framework principal.
+* **react-minimal-pie-chart** : Pour la generation du graphique statistique dans le Header.
 
-Sécurité : Demande de confirmation systématique avant de réinitialiser l'application à zéro.
-
-Données : Chargement automatique d'un backup JSON au démarrage.
-
- Installation et Lancement
-Cloner le projet :
-
-Bash
-git clone [URL_DE_TON_REPO]
-cd to-do-list
-Installer les dépendances :
-
-Bash
-npm install
-Lancer l'application :
-
-Bash
-npm start
-L'application sera disponible sur http://localhost:3000.
-
- Structure du Projet
-L'architecture suit une approche modulaire pour faciliter la maintenance :
-
-src/components/ : Composants UI découpés par dossier avec leur propre fichier CSS (Header, Footer, TaskCard, Modals, etc.).
-
-src/hooks/ : Logique métier centralisée dans le hook personnalisé useTodoApp.js.
-
-src/utils/ : Fonctions pures pour le tri, le filtrage et la manipulation des données.
-
-src/constants/ : Enums pour les états, les couleurs et les valeurs par défaut.
-
- Bibliothèques utilisées
-React : Framework principal.
-
-react-minimal-pie-chart : Pour la génération du graphique statistique dans le Header.
-
-CSS Modules / Vanilla CSS : Pour le stylisation "Papeterie/Rétro".
-
-Auteur : Sofia Ach - BUT2 Informatique
+---
+**Auteur** : Sofia Ach - BUT2 Informatique
